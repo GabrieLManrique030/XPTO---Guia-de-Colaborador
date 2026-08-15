@@ -2,7 +2,6 @@
 
 
 # 1. CONFIGURAÇÃO INICIAL
-# ============================================================
 
 # Verificar se o Git está instalado
 git --version
@@ -16,7 +15,6 @@ git config --global user.email "Seu email Novato"
 
 
 # 2. OBTER O PROJETO
-# ============================================================
 
 # Clonar o repositório da empresa verifique se esta correto o link
 git clone [URL_DO_REPOSITORIO](https://github.com/VictorH131/XPTO---Guia-de-Colaborador.git)
@@ -32,7 +30,6 @@ git status
 
 
 # 3. ATUALIZAR A MAIN ANTES DE COMEÇAR
-# ============================================================
 
 # Ir para a branch principal
 git switch main
@@ -45,7 +42,6 @@ git pull origin main
 
 
 # 4. CRIAR UMA BRANCH PARA A SUA TAREFA
-# ============================================================
 
 # verificar com A chefia oq seria sua função, tipo Qual vai ser a sua branch Pra ver se já não existe
 # Caso não exista 
@@ -68,7 +64,6 @@ git branch
 
 
 # 5. FAZER AS ALTERAÇÕES NO CÓDIGO
-# ============================================================
 
 # ALTERE O CÓDIGO DO PROJETO, Por segurança e para evitar Futuras Reclamações da umas duas verificações, 
 # para Futuras Promoções Faça Mais Uma Mais minuciosa 
@@ -82,7 +77,6 @@ git diff
 
 
 # 6. ADICIONAR AS ALTERAÇÕES
-# ============================================================
 
 # Adicionar todos os arquivos modificados
 # Adicionar Tudo
@@ -99,7 +93,6 @@ git status
 
 
 # 7. CRIAR O COMMIT
-# ============================================================
 
 # Registrar as alterações
 git commit -m "Descrição da alteração De maneira Clara E Facil de entender"
@@ -113,7 +106,6 @@ git commit -m "Descrição da alteração De maneira Clara E Facil de entender"
 
 
 # 8. ENVIAR A BRANCH PARA O SERVIDOR
-# ============================================================
 # Primeiro push dessa branch
 git push -u origin feature/nome-da-tarefa
 
@@ -124,7 +116,6 @@ git push -u origin feature/nome-da-tarefa
 
 
 # 9. CRIAR O PULL REQUEST
-# ============================================================
 
 # NÃO é feito por comando Git.
 # Acesse o GitHub utilizado pela nossa empresa
@@ -145,7 +136,7 @@ git push -u origin feature/nome-da-tarefa
 
 
 # 10. CASO O CODE REVIEW (Luis P) PEÇA ALTERAÇÕES, já que ele sempre verifica o cádigo legal
-# ============================================================
+
 
 # Faça as alterações que foram pedidas de forma normal no código.
 
@@ -168,7 +159,7 @@ git push
 
 
 # 11. APÓS A APROVAÇÃO E MERGE
-# ============================================================
+
 
 # Voltar para a main
 git switch main
@@ -182,7 +173,6 @@ git pull origin main
 
 
 # 12. APAGAR A BRANCH LOCAL
-# ============================================================
 
 # Depois que o trabalho já foi integrado à main
 git branch -d feature/nome-da-tarefa
@@ -197,7 +187,6 @@ git branch -d feature/nome-da-tarefa
 
 
 # FLUXO COMPLETO RESUMIDO 
-# ============================================================
 
 git clone URL_DO_REPOSITORIO
 
