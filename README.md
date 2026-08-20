@@ -1,5 +1,3 @@
-Claro. Mantive **os comentários e o tom do guia**, sem emojis, mas organizei melhor a estrutura, corrigi comandos que estavam incorretos e deixei a leitura mais profissional sem tirar a personalidade do texto. Também preservei as brincadeiras nos comentários.
-
 # XPTO — Guia de Colaborador
 
 Este guia apresenta o fluxo básico para trabalhar com Git e GitHub no projeto da XPTO.
