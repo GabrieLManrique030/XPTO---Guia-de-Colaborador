@@ -1,38 +1,38 @@
-name: Primeira Pipeline 
+name: Primeira Pipeline
 
-on: 
+on:
   push:
     branches: [main]
 
-  jobs:
-    teste:
-      runs-on: ubuntu-latest
+jobs:
+  teste:
+    runs-on: ubuntu-latest
 
-      steps:
-        - name: Baixar Código do Repositório
-          uses: actions/checkout@v4
-      
-        - name: Configurar Python
-          uses: actions/setup-python@v5
-          with:
+    steps:
+      - name: Baixar Código do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
           python-version: '3.12'
-      
-      steps:
-        - run: pyteste
-      
-        - name: Configurar Python
-          uses: actions/setup-python@v5
-          with:
-            python-version: '3.12'
-      
-        - name: Instalar Dependências
-          run: pip install
 
-        - name: Executar Build
-          run: pip build
+      - run: pyteste
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar Dependências
+        run: pip install
+
+      - name: Executar Build
+        run: pip build
 
   deploy:
     needs: teste
     runs-on: ubuntu-latest
+
     steps:
       - run: echo "Deploy realizado"
