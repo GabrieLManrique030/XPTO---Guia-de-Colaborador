@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - run: pyteste
+      - run: pytest
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -25,7 +25,7 @@ jobs:
           python-version: '3.12'
 
       - name: Instalar Dependências
-        run: pip install
+        run: pip install pytest
 
       - name: Executar Build
         run: pip build
