@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  teste:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,21 +17,14 @@ jobs:
         with:
           python-version: '3.12'
 
-      - run: pytest
-
-      - name: Configurar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
       - name: Instalar Dependências
         run: pip install pytest
 
-      - name: Executar Build
-        run: pip build
+      - name: Executar Testes
+        run: pytest
 
   deploy:
-    needs: teste
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
