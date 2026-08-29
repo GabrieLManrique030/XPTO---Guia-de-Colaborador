@@ -45,7 +45,7 @@ jobs:
         run: npm test soma.js
       
   deploy:
-    needs: test_soma, test_div
+    needs: [test_soma, test_div]
     runs-on: ubuntu-latest
 
     steps:
