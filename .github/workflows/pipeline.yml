@@ -23,7 +23,7 @@ jobs:
       - name: Executar Testes
         run: pytest
 
-      -name: Teste De Segurança
+      - name: Teste De Segurança
         uses: gitleaks/gitleaks-action@v2
 
   deploy:
