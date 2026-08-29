@@ -1,51 +1,44 @@
-name: segunda Pipeline
+name: Segunda Pipeline
 
 on:
   push:
     branches: [main]
-         
+
 jobs:
   test_soma:
     runs-on: ubuntu-latest
 
     steps:
       - name: Baixar Código do Repositório
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configurar Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '22'
 
-
-      - name: Instalar Dependências
-        run: npm install
-
-      - name: Executar Testes
-        run: npm test soma.js
+      - name: Executar Teste de Soma
+        run: node soma.js
 
   test_div:
     runs-on: ubuntu-latest
 
     steps:
       - name: Baixar Código do Repositório
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Configurar Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v5
         with:
           node-version: '22'
 
+      - name: Executar Teste de Divisão
+        run: node div.js
 
-      - name: Instalar Dependências
-        run: npm install
-
-      - name: Executar Testes
-        run: npm test soma.js
-      
   deploy:
     needs: [test_soma, test_div]
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Deploy realizado"
+      - name: Deploy
+        run: echo "Deploy realizado"
