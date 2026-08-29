@@ -20,6 +20,9 @@ jobs:
       - name: Executar Teste de Soma
         run: node soma.js
 
+      - name: Teste De Segurança
+        uses: gitleaks/gitleaks-action@v2
+
   test_div:
     runs-on: ubuntu-latest
 

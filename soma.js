@@ -10,3 +10,7 @@ if (resultado === 8) {
     console.error("Teste falhou!");
     process.exit(1);
 }
+
+
+
+API_KEY = "1234567890_OPaiTaMonstro"
