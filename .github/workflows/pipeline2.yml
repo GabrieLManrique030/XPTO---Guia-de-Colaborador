@@ -1,4 +1,4 @@
-name: Primeira Pipeline
+name: segunda Pipeline
 
 on:
   push:
