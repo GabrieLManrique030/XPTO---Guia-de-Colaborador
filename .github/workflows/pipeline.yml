@@ -3,7 +3,6 @@ name: Primeira Pipeline
 on:
   push:
     branches: [main]
-        // - main Também funciona com "-"
          
 jobs:
   test:
@@ -23,7 +22,6 @@ jobs:
 
       - name: Executar Testes
         run: pytest
-      // run: pytest testes/soma.py
 
       
   deploy:

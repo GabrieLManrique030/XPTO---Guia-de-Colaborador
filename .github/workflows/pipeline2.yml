@@ -3,7 +3,6 @@ name: segunda Pipeline
 on:
   push:
     branches: [main]
-        // - main Também funciona com "-"
          
 jobs:
   test_soma:
