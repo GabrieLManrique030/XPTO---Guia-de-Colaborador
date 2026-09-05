@@ -14,4 +14,3 @@ def divisao(a, b):
     return a / b
 
 
-API_KEY = "1234567890_OPaiTaMonstro"

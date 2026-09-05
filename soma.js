@@ -13,4 +13,3 @@ if (resultado === 8) {
 
 
 
-API_KEY = "1234567890_OPaiTaMonstro"
