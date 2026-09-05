@@ -19,11 +19,11 @@ jobs:
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
-          cache: pip freeze > requirements.txt
+        python-version: ${{ matrix.python-version }}
+          cache: 'pip'
 
       - name: Instalar Dependências
-        run: pip install pytest
+        run: pip install - r requirements.txt
 
       - name: Executar Testes
         run: pytest
